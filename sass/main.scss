@@ -1,0 +1,67 @@
+@import "reset";
+@import "mixin";
+.trans{
+    transition: 300ms all;
+}
+.container {
+    width: 400px;
+    background-color: white;
+    @include borderRadius(3px);
+    padding: 30px;
+    margin-top: 50vh;
+    margin-bottom: 30px;
+
+    .loginHeader {
+        font-size: 24px;
+        text-transform: uppercase;
+        margin: 30px;
+    }
+
+    .loginContent{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        input {
+            height: 50px;
+            padding: 0 20px;
+            border: 2px solid rgb(234, 221, 221);
+            margin-bottom: 20px;
+        }
+    }
+
+    .loginFooter {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        a {
+            color: rgb(148, 141, 141);
+            @extend .trans;
+
+            &:hover {
+                color: black;
+            }
+            &:first-child {
+                background-color: royalblue;
+                width: 90px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 3px;
+                @extend .trans;
+            }
+        }
+    }
+}
+
+.signup {
+    a {
+        display: block;
+        color: white;
+        @extend .trans;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

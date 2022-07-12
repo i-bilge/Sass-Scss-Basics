@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  flex-direction: column;
+  background-color: royalblue; }
+
+.trans, .container .loginFooter a, .container .loginFooter a:first-child, .signup a {
+  transition: 300ms all; }
+
+.container {
+  width: 400px;
+  background-color: white;
+  border-radius: 3px;
+  padding: 30px;
+  margin-top: 50vh;
+  margin-bottom: 30px; }
+  .container .loginHeader {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 30px; }
+  .container .loginContent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; }
+    .container .loginContent input {
+      height: 50px;
+      padding: 0 20px;
+      border: 2px solid #eadddd;
+      margin-bottom: 20px; }
+  .container .loginFooter {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px; }
+    .container .loginFooter a {
+      color: #948d8d; }
+      .container .loginFooter a:hover {
+        color: black; }
+      .container .loginFooter a:first-child {
+        background-color: royalblue;
+        width: 90px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 3px; }
+
+.signup a {
+  display: block;
+  color: white; }
+  .signup a:hover {
+    text-decoration: underline; }
